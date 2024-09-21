@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +28,7 @@ body {
 header {
     display: flex;
     background-color: #ffffff;
-    border-bottom: 2px solid #e8dacd;
+    border-bottom: 2px solid #e5e5e5;
     padding: 10px 10px;
     position: fixed;
     top: 0;
@@ -275,7 +277,7 @@ h3 {
 #aboutQuiz,
 #aboutWebsite,
 #aboutShashikant {
-    display: none;
+    /* display: none; */
 }
 
 
@@ -303,6 +305,7 @@ h3 {
     width: 90%;
     border-radius: 10px;
     padding: 60px 10px 10px 10px;
+    box-sizing: border-box;
 }
 
 .memberCard img {
@@ -338,7 +341,80 @@ h3 {
 }
 
 
+/* Past records section  */
+#pastRecords {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
+h2+h3 {
+    margin-top: -20px;
+}
+
+.historyCard+h3 {
+    margin-top: 30px;
+}
+
+.historyCard {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #b2bbbf;
+    width: 90%;
+    z-index: 0;
+}
+
+.historyCard::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    rotate: 20deg;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.goldCard::before {
+    background-image: url("resources/gold_medal.jpg");
+    opacity: 0.2;
+}
+
+.silverCard::before {
+    background-image: url("resources/silver_medal.jpg");
+    opacity: 0.3;
+}
+
+.bronzeCard::before {
+    background-image: url("resources/bronze_medal.jpg");
+    opacity: 0.17;
+}
+
+.historyImg {
+    width: 100%;
+}
+
+.historyList {
+    margin: 0 10px 10px 10px;
+}
+
+.historyLiTitle {
+     color: #00aaff;
+     font-weight: bold;
+}
+
+.historyMembersName {
+    margin-left: 10px;
+    list-style-position: inside;
+    list-style-type: disc;
+}
 
 
 
@@ -461,6 +537,6 @@ footer {
     text-align: center;
     width: 100%;
     margin-top: 20px;
-    border-top: 2px solid #e8dacd;
+    border-top: 2px solid #e5e5e5;
     padding: 5px 0;
 }
