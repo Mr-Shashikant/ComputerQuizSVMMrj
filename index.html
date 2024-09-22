@@ -13,8 +13,8 @@
 
 <body>
     <header>
-        <img src="https://www.dropbox.com/scl/fi/l9bmv63i1bguhho8dzug2/Computer_Quiz_Competition.png?rlkey=q52qwwbjppnhd4x7xvgaqw97x&st=1iaa9fos&raw=1" alt="Logo" height="25">
-        <div id="hamMenu">
+        <img src="resources/Computer_Quiz_Competition.png" alt="Logo" height="25" onclick="homeF()">
+        <div id="hamMenu" onclick="menuF()">
             <span id="menuLine1"></span>
             <span id="menuLine2"></span>
             <span id="menuLine3"></span>
@@ -22,28 +22,36 @@
     </header>
     <nav>
         <ul id="menu">
-            <li id="homeLink"> HOME </li>
-            <li id="membersLink"> MEMBERS </li>
-            <li id="pastRecordLink"> PAST RECORD </li>
-            <li id="syllabusLink"> SYLLABUS </li>
-            <li id="aboutQuizLink"> ABOUT QUIZ </li>
-            <li id="websiteInfoLink">ABOUT WEBSITE </li>
+            <li id="homeLink" onclick="homeF()"> HOME </li>
+            <li id="membersLink" onclick="membersF()"> MEMBERS </li>
+            <li id="pastRecordLink" onclick="achievementsF()"> ACHIVEMENTS </li>
+            <li id="syllabusLink" onclick="syllabusF()"> SYLLABUS </li>
+            <li id="aboutQuizLink" onclick="aboutQuizF()"> ABOUT QUIZ </li>
+            <li id="websiteInfoLink" onclick="aboutWebsiteF()">ABOUT WEBSITE </li>
         </ul>
     </nav>
 
     <main>
         <section id="home">
             <div class="card"></div>
-            <img src="https://www.dropbox.com/scl/fi/6hz52905pabuhaa43172a/Champions.jpg?rlkey=x3ebtfibrvqmhbsfhveehtcsm&st=jicygyt4&raw=1" alt="Image with championship trophy" id="heroImg">
+            <img src="resources/(full)FB_IMG_1725027527519.jpg" alt="Image with championship trophy" id="heroImg">
             <div id="heroBlur"></div>
-            <!-- <div id="bgBlurDecorator"></div> -->
             <h1 id="heroTitle">The <span>Champions</span> <span> of 2022</span> </h1>
             <h2>Latest News</h2>
             <div class="cardStyle1">
                 <div class="varg">Bal Varg</div>
-                <img src="https://www.dropbox.com/scl/fi/m6pkary3u89wvrb0tzx05/PriceTakingBV2024.jpg?rlkey=qhhnz96oywfjfc1rj89bk4xf7&st=2uo2s53y&raw=1" alt="Image of taking prize" width="100%"
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of taking prize" width="100%"
                     class="containerImagePlaceholder">
                 <div class="cardDescription"> The participants of Bal varg performed their best and got First positon in
+                    Computer Quiz competition at Vibhag level held at MSVM, Mahavirpuram, Siwan. They made the school
+                    feel proud.</div>
+                <button class="readMore">Read More <i class='bx bx-chevron-right'></i></button>
+            </div>
+            <div class="cardStyle1">
+                <div class="varg">Kishor Varg</div>
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of taking prize" width="100%"
+                    class="containerImagePlaceholder">
+                <div class="cardDescription"> The participants of Kishor varg performed their best and got Third positon in
                     Computer Quiz competition at Vibhag level held at MSVM, Mahavirpuram, Siwan. They made the school
                     feel proud.</div>
                 <button class="readMore">Read More <i class='bx bx-chevron-right'></i></button>
@@ -51,23 +59,23 @@
 
             <h2>Navigate to</h2>
             <ul id="homeNavContainer">
-                <li id="navToMembers">
+                <li id="navToMembers" onclick="membersF()">
                     <i class='bx bxs-group' ></i>
                     <p class="iconName">Members</p>
                 </li>
-                <li id="navToPastRecords">
+                <li id="navToachievements" onclick="achievementsF()">
                     <i class='bx bx-history' ></i>
-                    <p class="iconName">History</p>
+                    <p class="iconName">Achievements</p>
                 </li>
-                <li id="navToSyllabus">
+                <li id="navToSyllabus" onclick="syllabusF()">
                     <i class='bx bxs-book' ></i>
                     <p class="iconName">Syllabus</p>
                 </li>
-                <li id="navToAboutQuiz">
+                <li id="navToAboutQuiz" onclick="aboutQuizF()">
                     <i class='bx bxs-timer' ></i>
                     <p class="iconName">About Quiz</p>
                 </li>
-                <li id="navToAboutWebsite">
+                <li id="navToAboutWebsite" onclick="aboutWebsiteF()">
                     <i class='bx bxs-info-circle' ></i>
                     <p class="iconName">About Web</p>
                 </li>
@@ -75,11 +83,11 @@
         </section>
 
         <section id="members">
-            <h2>Members</h2>
+            <h2>Members <span class="session">[Session 2024-25]</span></h2>
             <h3>Bal Varg</h3>
 
             <div class="memberCard">
-                <img src="https://www.dropbox.com/scl/fi/kdv4xb8s56maw1kmkn97w/AuthorShashikant.jpg?rlkey=rmgtx11uane9946o9kyyitc0f&st=aqks9f9w&raw=1" alt="Profile Pic" class="profileImg">
+                <img src="resources/Shashikant.jpg" alt="Profile Pic" class="profileImg">
                 <div class="wrapperInsideMemberCard">
                     <div class="memberCardName">David</div>
                     <ul class="memberCardList">
@@ -104,7 +112,7 @@
             </div>
 
             <div class="memberCard">
-                <img src="https://www.dropbox.com/scl/fi/kdv4xb8s56maw1kmkn97w/AuthorShashikant.jpg?rlkey=rmgtx11uane9946o9kyyitc0f&st=aqks9f9w&raw=1" alt="Profile Pic" class="profileImg">
+                <img src="resources/Shashikant.jpg" alt="Profile Pic" class="profileImg">
                 <div class="wrapperInsideMemberCard">
                     <div class="memberCardName">Aniket Anand</div>
                     <ul class="memberCardList">
@@ -114,7 +122,7 @@
                         </li>
                         <li class="memberCardListItem">
                             <span class="memberCardLiTitle">Roll No.:</span>
-                            <span class="memberCardLiDescription">00</span>
+                            <span class="memberCardLiDescription">12</span>
                         </li>
                         <li class="memberCardListItem">
                             <span class="memberCardLiTitle">Joined:</span>
@@ -129,7 +137,7 @@
             </div>
 
             <div class="memberCard">
-                <img src="https://www.dropbox.com/scl/fi/kdv4xb8s56maw1kmkn97w/AuthorShashikant.jpg?rlkey=rmgtx11uane9946o9kyyitc0f&st=aqks9f9w&raw=1" alt="Profile Pic" class="profileImg">
+                <img src="resources/Shashikant.jpg" alt="Profile Pic" class="profileImg">
                 <div class="wrapperInsideMemberCard">
                     <div class="memberCardName">Rahul Kumar</div>
                     <ul class="memberCardList">
@@ -139,7 +147,7 @@
                         </li>
                         <li class="memberCardListItem">
                             <span class="memberCardLiTitle">Roll No.:</span>
-                            <span class="memberCardLiDescription">00</span>
+                            <span class="memberCardLiDescription">10</span>
                         </li>
                         <li class="memberCardListItem">
                             <span class="memberCardLiTitle">Joined:</span>
@@ -152,15 +160,89 @@
                     </ul>
                 </div>
             </div>
+
+            <h3>Kishor Varg</h3>
+            <div class="memberCard">
+                <img src="resources/Shashikant.jpg" alt="Profile Pic" class="profileImg">
+                <div class="wrapperInsideMemberCard">
+                    <div class="memberCardName">Shashikant</div>
+                    <ul class="memberCardList">
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Class:</span>
+                            <span class="memberCardLiDescription">9<sup>th</sup> 'A'</span>
+                        </li>
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Roll No.:</span>
+                            <span class="memberCardLiDescription">02</span>
+                        </li>
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Joined:</span>
+                            <span class="memberCardLiDescription">2022</span>
+                        </li>
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Varg:</span>
+                            <span class="memberCardLiDescription">Kishor Varg</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="memberCard">
+                <img src="resources/Shashikant.jpg" alt="Profile Pic" class="profileImg">
+                <div class="wrapperInsideMemberCard">
+                    <div class="memberCardName">Rishabh Raj</div>
+                    <ul class="memberCardList">
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Class:</span>
+                            <span class="memberCardLiDescription">10<sup>th</sup> 'A'</span>
+                        </li>
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Roll No.:</span>
+                            <span class="memberCardLiDescription">12</span>
+                        </li>
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Joined:</span>
+                            <span class="memberCardLiDescription">2022</span>
+                        </li>
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Varg:</span>
+                            <span class="memberCardLiDescription">Kishor Varg</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="memberCard">
+                <img src="resources/Shashikant.jpg" alt="Profile Pic" class="profileImg">
+                <div class="wrapperInsideMemberCard">
+                    <div class="memberCardName">Abhijit Kumar</div>
+                    <ul class="memberCardList">
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Class:</span>
+                            <span class="memberCardLiDescription">10<sup>th</sup> 'A'</span>
+                        </li>
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Roll No.:</span>
+                            <span class="memberCardLiDescription">00</span>
+                        </li>
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Joined:</span>
+                            <span class="memberCardLiDescription">2022</span>
+                        </li>
+                        <li class="memberCardListItem">
+                            <span class="memberCardLiTitle">Varg:</span>
+                            <span class="memberCardLiDescription">Kishor Varg</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="pastRecords">
-            <h2>Past Record</h2>
+        <section id="achievements">
+            <h2>Achievements</h2>
 
             <h3>Bal Varg</h3>
 
             <div class="historyCard goldCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Vibhag</span>
@@ -184,7 +266,7 @@
             </div>
 
             <div class="historyCard bronzeCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Prant</span>
@@ -207,7 +289,7 @@
             </div>
 
             <div class="historyCard goldCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Vibhag</span>
@@ -230,7 +312,7 @@
             </div>
 
             <div class="historyCard bronzeCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Kshetra</span>
@@ -253,7 +335,7 @@
             </div>
 
             <div class="historyCard goldCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Prant</span>
@@ -276,7 +358,7 @@
             </div>
 
             <div class="historyCard silverCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Vibhag</span>
@@ -301,7 +383,7 @@
 
             <h3>Kishor Varg</h3>
             <div class="historyCard bronzeCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Vibhag</span>
@@ -323,7 +405,7 @@
                 </ul>
             </div>
             <div class="historyCard silverCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Vibhag</span>
@@ -345,7 +427,7 @@
                 </ul>
             </div>
             <div class="historyCard silverCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Prant</span>
@@ -367,7 +449,7 @@
                 </ul>
             </div>
             <div class="historyCard goldCard">
-                <img src="resources/IMG-20240905-WA0000.jpg" alt="Image of past year(s)" class="historyImg">
+                <img src="resources/PrizeTakingBV2024.jpg" alt="Image of past year(s)" class="historyImg">
                 <ul class="historyList">
                     <li class="historyListItem">
                         <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Vibhag</span>
@@ -405,7 +487,24 @@
                 <li class="syllabusLi">Ethics and Safety Measure</li>
                 <li class="syllabusLi">Mail and Malware & Cyber Security</li>
             </ul>
-            <a href="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf" download="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf"><button class="pdfDownload"> <span class="downloadIcon"><i class='bx bx-download' ></i></span> Download PDF</button></a>
+
+            <h3>Kishor Varg</h3>
+            <ul class="syllabusUl">
+                <li class="syllabusLi">ICT</li>
+                <li class="syllabusLi">ITeS</li>
+                <li class="syllabusLi">Keyboard Skills</li>
+                <li class="syllabusLi">Digital Documentation</li>
+                <li class="syllabusLi">Digital Presentation</li>
+                <li class="syllabusLi">Electronic Spreadsheet</li>
+                <li class="syllabusLi">Database Management System</li>
+                <li class="syllabusLi">Employability and Personality Development Skills </li>
+                <li class="syllabusLi">Web Application and Security</li>
+                <li class="syllabusLi">Number System</li>
+            </ul>
+
+            <div class="info">Download PDF for more details</div>
+            <a href="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf" download="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf"><button class="pdfDownload"><i class='bx bx-download' ></i></span> Download PDF</button></a>
+            <div class="specialblur"></div>
         </section>
 
 
@@ -445,7 +544,7 @@
                 <li class="rulesLi">Syllabus of Kishor Varg is based on MICA EDUCO Publication (IT- 402). Latest
                     edition.(Except Number System)</li>
             </ul>
-            <a href="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf" download="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf"><button class="pdfDownload"> <span class="downloadIcon"><i class='bx bx-download' ></i></span> Download PDF</button></a>
+            <a href="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf" download="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf"><button class="pdfDownload"><i class='bx bx-download' ></i> Download PDF</button></a>
         </section>
 
 
@@ -468,7 +567,7 @@
         <section id="aboutShashikant">
             <h2>About Me</h2>
             <div class="memberCard shashikantCard">
-                <img src="https://www.dropbox.com/scl/fi/kdv4xb8s56maw1kmkn97w/AuthorShashikant.jpg?rlkey=rmgtx11uane9946o9kyyitc0f&st=aqks9f9w&raw=1" alt="Profile Pic" class="profileImg">
+                <img src="resources/Shashikant.jpg" alt="Profile Pic" class="profileImg">
                 <div class="wrapperInsideMemberCard">
                     <div class="memberCardName">Shashikant</div>
                     <ul class="memberCardList">
@@ -490,7 +589,7 @@
                             <ul class="connectWithShashikant">
                                 <li class="connectLink"><a href="https://github.com/Mr-Shashikant"> <i class='bx bxl-github' ></i> GitHub</a></li>
                                 <li class="connectLink"><a href="https://t.me/Mr_Shashikant_CSS"><i class='bx bxl-telegram' ></i> Telegram</a></li>
-                                <li class="connectLink"><a href="https://www.sololearn.com/en/profile/29591511"> <img src="SoloLearn_logo.svg" alt="Sololearn_logo"> Sololearn</a></li>
+                                <li class="connectLink"><a href="https://www.sololearn.com/en/profile/29591511"> <img src="resources/SoloLearn_logo.svg" alt="Sololearn_logo"> Sololearn</a></li>
                                 <li class="connectLink"><a href="https://medium.com/@mrshashikant"> <i class='bx bxl-medium' ></i> Medium</a></li>
                                 <li class="connectLink"><a href="mailto:mr.shashikant@yahoo.com"> <i class='bx bxs-envelope' ></i> mr.shashikant@yahoo.com</a></li>
                             </ul>
@@ -502,8 +601,10 @@
     </main>
 
     <footer>
-        <div id="Creator">Made with ♥ by Shashikant</div>
+        <div id="Creator">Made with ♥ by <span onclick="aboutShashikantF()">Shashikant</span></div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -24,6 +24,12 @@ body {
     padding-top: 54px;
 }
 
+h1,
+h2 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 /* header design  */
 header {
     display: flex;
@@ -104,7 +110,7 @@ main {
 }
 
 #heroImg {
-    width: 90%;
+    width: 85%;
     border-radius: 20px;
     margin-top: 20px;
 }
@@ -122,11 +128,12 @@ main {
     position: relative;
     bottom: 200px;
     font-size: 14px;
+    width: unset;
 }
 
 #heroTitle :nth-child(1) {
     display: block;
-    font-family: cursive;
+    font-family: 'comic sans ms', 'comic sans', 'comic neue', cursive, sans-serif;
     font-size: 40px;
     color: #00aaff;
     text-shadow: 0 0 10px #00aaff92;
@@ -150,7 +157,7 @@ main {
 
 .card {
     height: 100px;
-    width: 80%;
+    width: 75%;
     max-width: 400px;
     position: absolute;
     background-color: #00aaff20;
@@ -163,7 +170,7 @@ main {
 h2 {
     color: #203e4d;
     align-self: flex-start;
-    margin: 15px 0 10px 10px;
+    padding: 15px 0 10px 10px;
 }
 
 h3 {
@@ -173,6 +180,11 @@ h3 {
 }
 
 /* card design  */
+
+#home h2 {
+    padding-bottom: 0;
+}
+
 .cardStyle1 {
     background-color: #fff;
     box-shadow: 0 0 10px #b2bbbf;
@@ -184,6 +196,7 @@ h3 {
     flex-direction: column;
     gap: 5px;
     font-size: 14px;
+    margin-top: 20px;
 }
 
 .cardStyle1 img {
@@ -272,18 +285,18 @@ h3 {
 
 /* initially hiding the other sections */
 #members,
-#pastRecords,
+#achievements,
 #syllabus,
 #aboutQuiz,
 #aboutWebsite,
 #aboutShashikant {
-    /* display: none; */
+    display: none;
 }
 
 
 /* Members section  */
 #members {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -340,10 +353,14 @@ h3 {
     color: #00aaff;
 }
 
+.memberCard+h3 {
+    padding-top: 20px;
+}
+
 
 /* Past records section  */
-#pastRecords {
-    display: flex;
+#achievements {
+    /* display: flex; */
     flex-direction: column;
     gap: 20px;
     justify-content: center;
@@ -403,11 +420,12 @@ h2+h3 {
 
 .historyList {
     margin: 0 10px 10px 10px;
+    list-style-type: none;
 }
 
 .historyLiTitle {
-     color: #00aaff;
-     font-weight: bold;
+    color: #00aaff;
+    font-weight: bold;
 }
 
 .historyMembersName {
@@ -421,7 +439,7 @@ h2+h3 {
 
 /* Syllabus section  */
 #syllabus {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -432,40 +450,50 @@ h2+h3 {
 }
 
 .syllabusUl {
-    list-style-position: inside;
-    margin: 0 12px;
+    width: 90%;
+    margin-left: 10%;
+    box-sizing: border-box;
 }
+
+#syllabus .info {
+    font-style: italic;
+    color: #203e4d;
+    font-size: small;
+    align-self: self-start;
+    padding: 10px;
+}
+
 .pdfDownload {
     margin-top: 20px;
-    background-color: #fff;
-    border: 3px solid #00aaff;
-    color: #00aaff;
-    padding: 0px 10px 0px 0px;
+    background-color: #00aaff;
+    border: none;
+    color: #fff;
+    padding: 7px 15px;
     border-radius: 100px;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
+    backdrop-filter: blur(10px);
 }
 
 .pdfDownload:hover {
-    background-color: #f5fbff;
+    background-color: #2eb9ff;
 }
 
 .downloadIcon {
     display: inline-block;
     font-size: 20px;
-    background-color: #00aaff;
-    color: #fff;
+    background-color: #fff;
+    color: #00aaff;
     padding: 5px;
     width: 40px;
     border-radius: 80px;
 }
 
 
-
 /* About Quiz Section */
 #aboutQuiz {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -482,7 +510,7 @@ h2+h3 {
 
 /* About Website Section  */
 #aboutWebsite {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -491,6 +519,7 @@ h2+h3 {
 #creatorShashikant {
     background-color: #00aaff;
     color: #fff;
+    width: max-content;
     border-radius: 20px;
     padding: 5px 20px;
     font-size: 15px;
@@ -501,7 +530,7 @@ h2+h3 {
 
 /* About Shashikant Section  */
 #aboutShashikant {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
