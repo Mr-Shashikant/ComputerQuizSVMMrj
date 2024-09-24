@@ -7,6 +7,7 @@ let aboutWebsite = document.getElementById("aboutWebsite");
 let aboutShashikant = document.getElementById("aboutShashikant");
 let menuClicker = document.getElementById("hamMenu");
 let menu = document.getElementById("menu");
+let menuToggle = document.getElementById("hamMenu");
 
 function homeF() {
     home.style.display = "flex";
@@ -17,6 +18,7 @@ function homeF() {
     aboutWebsite.style.display = "none";
     aboutShashikant.style.display = "none";
     menu.style.display = "none";
+    menuToggle.classList.remove('close');
 }
 function membersF() {
     home.style.display = "none";
@@ -27,6 +29,7 @@ function membersF() {
     aboutWebsite.style.display = "none";
     aboutShashikant.style.display = "none";
     menu.style.display = "none";
+    menuToggle.classList.remove('close');
 }
 function achievementsF() {
     home.style.display = "none";
@@ -37,6 +40,7 @@ function achievementsF() {
     aboutWebsite.style.display = "none";
     aboutShashikant.style.display = "none";
     menu.style.display = "none";
+    menuToggle.classList.remove('close');
 }
 function syllabusF() {
     home.style.display = "none";
@@ -47,6 +51,7 @@ function syllabusF() {
     aboutWebsite.style.display = "none";
     aboutShashikant.style.display = "none";
     menu.style.display = "none";
+    menuToggle.classList.remove('close');
 }
 function aboutQuizF() {
     home.style.display = "none";
@@ -57,6 +62,7 @@ function aboutQuizF() {
     aboutWebsite.style.display = "none";
     aboutShashikant.style.display = "none";
     menu.style.display = "none";
+    menuToggle.classList.remove('close');
 }
 function aboutWebsiteF() {
     home.style.display = "none";
@@ -67,6 +73,7 @@ function aboutWebsiteF() {
     aboutWebsite.style.display = "flex";
     aboutShashikant.style.display = "none";
     menu.style.display = "none";
+    menuToggle.classList.remove('close');
 }
 function aboutShashikantF() {
     home.style.display = "none";
@@ -77,7 +84,14 @@ function aboutShashikantF() {
     aboutWebsite.style.display = "none";
     aboutShashikant.style.display = "flex";
     menu.style.display = "none";
+    menuToggle.classList.remove('close');
 }
 function menuF() {
-    menu.style.display = "flex"
+    if (menu.style.display == 'none' || menu.style.display == '') {
+        menu.style.display = "flex";
+        menuToggle.classList.add('close');
+    } else if (menu.style.display == 'flex') {
+        menu.style.display = "none";
+        menuToggle.classList.remove('close');
+    }
 }

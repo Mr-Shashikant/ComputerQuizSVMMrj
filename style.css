@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     font-family: 'poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100vw;
     max-width: 500px;
@@ -25,7 +25,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     width: 100%;
     box-sizing: border-box;
 }
@@ -60,6 +61,24 @@ header {
     background-color: #000;
     height: 2px;
     border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.close :nth-child(1) {
+    position: relative;
+    transform: rotateZ(45deg);
+    top: 7px;
+}
+
+.close :nth-child(2) {
+    position: relative;
+    transform: translateX(200px);
+}
+
+.close :nth-child(3) {
+    position: relative;
+    transform: rotateZ(-45deg);
+    top: -7px;
 }
 
 /* when menu appears */
@@ -69,6 +88,7 @@ header {
     height: 100%;
     top: 0;
     left: 0;
+    right: 100%;
     background-color: #fffdfb;
     justify-content: center;
     align-items: center;
@@ -80,6 +100,7 @@ header {
     font-size: 20px;
     font-weight: 500;
     z-index: 2;
+    transition: all 0.5s ease-in-out;
 }
 
 #menu li {
@@ -120,7 +141,7 @@ main {
     height: 150px;
     position: relative;
     bottom: 100px;
-    background-color: #fff;
+    background-color: #f3f3f3;
     filter: blur(20px);
 }
 
@@ -135,7 +156,7 @@ main {
     display: block;
     font-family: 'comic sans ms', 'comic sans', 'comic neue', cursive, sans-serif;
     font-size: 40px;
-    color: #00aaff;
+    color: var(--mainColor);
     text-shadow: 0 0 10px #00aaff92;
 }
 
@@ -148,7 +169,7 @@ main {
     height: 100px;
     width: 100px;
     z-index: -1;
-    background-color: #00aaff;
+    background-color: var(--mainColor);
     border-radius: 50%;
     position: absolute;
     top: 100px;
@@ -186,8 +207,8 @@ h3 {
 }
 
 .cardStyle1 {
-    background-color: #fff;
-    box-shadow: 0 0 10px #b2bbbf;
+    background-color: #fcfcfc;
+    border: 2px solid #e8e8e8;
     width: 90%;
     padding: 5px 5px 10px 5px;
     box-sizing: border-box;
@@ -205,7 +226,7 @@ h3 {
 
 .cardStyle1 .varg {
     font-weight: 500;
-    color: #00aaff;
+    color: var(--mainColor);
     margin-left: 5px;
 }
 
@@ -213,7 +234,7 @@ h3 {
     position: relative;
     border: none;
     background-color: transparent;
-    color: #00aaff;
+    color: var(--mainColor);
     padding: 5px 15px;
     border-radius: 50px;
     width: max-content;
@@ -235,7 +256,7 @@ h3 {
     content: '';
     height: 100%;
     width: 100%;
-    background-color: #00aaff;
+    background-color: var(--mainColor);
     border-radius: 10px;
     position: absolute;
     bottom: 0;
@@ -261,7 +282,8 @@ h3 {
 
 #homeNavContainer li {
     padding: 5px;
-    background-color: #fff;
+    background-color: #fcfcfc;
+    border: 2px solid #e8e8e8;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -269,7 +291,6 @@ h3 {
     align-items: center;
     font-size: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 5px #b2bbbf;
     cursor: pointer;
 }
 
@@ -313,8 +334,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    box-shadow: 0 0 10px #b2bbbf;
+    background-color: #fcfcfc;
+    border: 2px solid #e8e8e8;
     width: 90%;
     border-radius: 10px;
     padding: 60px 10px 10px 10px;
@@ -324,7 +345,7 @@ h3 {
 .memberCard img {
     width: 100px;
     border-radius: 100px;
-    border: 5px solid #fff;
+    border: 5px solid #f3f3f3;
     position: absolute;
     top: -50px;
 }
@@ -340,7 +361,7 @@ h3 {
 
 .memberCard .memberCardName {
     font-weight: bold;
-    color: #00aaff;
+    color: var(--mainColor);
 }
 
 .memberCard .memberCardList {
@@ -350,7 +371,7 @@ h3 {
 
 .memberCard .memberCardList li .memberCardLiTitle {
     font-weight: bold;
-    color: #00aaff;
+    color: var(--mainColor);
 }
 
 .memberCard+h3 {
@@ -367,6 +388,47 @@ h3 {
     align-items: center;
 }
 
+#achievements h3+p {
+    font-style: italic;
+    color: #203e4d;
+    font-size: small;
+    align-self: self-start;
+    padding: 0 10px;
+    margin-top: -20px;
+}
+
+.teachers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.teachersCard {
+    position: relative;
+}
+
+.teachersCard img{
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.teachersCard span {
+    background-image: linear-gradient(to top, #f3f3f3, #f3f3f3df, #00000000);
+    height: 100px;
+    border-radius: 0 20px 20px 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: #203e4d;
+}
+
 h2+h3 {
     margin-top: -20px;
 }
@@ -378,9 +440,9 @@ h2+h3 {
 .historyCard {
     position: relative;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #fcfcfc;
+    border: 2px solid #e8e8e8;
     border-radius: 10px;
-    box-shadow: 0 0 10px #b2bbbf;
     width: 90%;
     z-index: 0;
 }
@@ -424,7 +486,7 @@ h2+h3 {
 }
 
 .historyLiTitle {
-    color: #00aaff;
+    color: var(--mainColor);
     font-weight: bold;
 }
 
@@ -465,7 +527,7 @@ h2+h3 {
 
 .pdfDownload {
     margin-top: 20px;
-    background-color: #00aaff;
+    background-color: var(--mainColor);
     border: none;
     color: #fff;
     padding: 7px 15px;
@@ -484,7 +546,7 @@ h2+h3 {
     display: inline-block;
     font-size: 20px;
     background-color: #fff;
-    color: #00aaff;
+    color: var(--mainColor);
     padding: 5px;
     width: 40px;
     border-radius: 80px;
@@ -517,14 +579,15 @@ h2+h3 {
 }
 
 #creatorShashikant {
-    background-color: #00aaff;
+    background-color: var(--mainColor);
     color: #fff;
-    width: max-content;
+    width: 150px;
     border-radius: 20px;
     padding: 5px 20px;
     font-size: 15px;
     font-weight: 500;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 
@@ -534,31 +597,95 @@ h2+h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+.meProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
 }
 
-.shashikantCard {
-    margin-top: 60px;
-    margin-bottom: 20px;
+.meProfile img {
+    width: 90px;
+    border-radius: 50px;
 }
 
-.connectWithShashikant {
-    list-style: none;
-    margin-left: 50px;
+.meName {
+    font-weight: bold;
+    color: var(--mainColor);
 }
 
-.connectLink a {
+.meDescription {
+    font-style: italic;
+    color: #203e4d;
+    font-size: small;
+    align-self: self-start;
+}
+
+#aboutShashikant h3 {
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+.meGeneralInfo ul {
+    padding: 0 5%;
+    list-style-type: none;
+}
+
+.meGeneralInfo ul li :nth-child(1) {
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+.meConnect {
+    width: 100%;
+}
+
+.meConnect ul {
+    padding: 0 5%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.meConnect ul li {
+    position: relative;
+    background-color: #fcfcfc;
+    border: 2px solid #e8e8e8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.meConnect ul li::before {
+    content: '';
+    height: 50%;
+    width: 4px;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+}
+
+.meConnect ul a {
     color: #000;
     text-decoration: none;
 }
 
-.connectWithShashikant img {
-    border: none;
-    border-radius: 0;
-    position: static;
-    height: 16px;
-    width: 16px;
+.meConnect ul li .icon {
+    display: flex;
+    font-size: 30px;
 }
 
+.meConnect ul li img {
+    height: 25px;
+    padding: 2.5px;
+}
 
 
 /* footer  */
@@ -568,4 +695,8 @@ footer {
     margin-top: 20px;
     border-top: 2px solid #e5e5e5;
     padding: 5px 0;
+}
+
+footer span {
+    cursor: pointer;
 }
