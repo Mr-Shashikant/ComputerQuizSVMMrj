@@ -243,12 +243,19 @@ h3 {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     z-index: 1;
+    
+}
+
+.cardStyle1 .readMore a {
+    color: var(--mainColor);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cardStyle1 .readMore:hover {
+.cardStyle1 .readMore:hover a {
     color: #fff;
 }
 
