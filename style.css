@@ -401,7 +401,9 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    width: 80%;
+    box-sizing: border-box;
 }
 
 .teachersCard {
@@ -409,7 +411,7 @@ h3 {
 }
 
 .teachersCard img{
-    height: 300px;
+    height: 220px;
     border-radius: 20px;
     position: relative;
 }
@@ -523,6 +525,8 @@ h2+h3 {
     font-size: small;
     align-self: self-start;
     padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .pdfDownload {
