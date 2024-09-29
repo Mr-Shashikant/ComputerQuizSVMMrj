@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our school's i.e. Saraswati Vidya Mandir, Keshav Nagar,Maharajganj journey in the Vidya Bharati Computer Quiz and Computer Project. Discover past records, participating members, quiz syllabus, and innovative projects showcasing students' achievements and technological skills.">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="resources/Computer_Quiz_Competition.png" type="image/x-icon">
+    <link rel="icon" href="resources/Computer_Quiz_Competition.png" type="image/png">
     <title>Computer Quiz Competition</title>
 
     <!-- wrote HTML on 7th September 2024 -->
@@ -24,6 +25,7 @@
     <nav>
         <ul id="menu">
             <li id="homeLink" onclick="homeF()"> HOME </li>
+            <li id="homeLink" onclick="modelF()"> MODEL </li>
             <li id="membersLink" onclick="membersF()"> MEMBERS </li>
             <li id="pastRecordLink" onclick="achievementsF()"> ACHIVEMENTS </li>
             <li id="syllabusLink" onclick="syllabusF()"> SYLLABUS </li>
@@ -47,7 +49,9 @@
                 <div class="cardDescription"> The participants of Bal varg performed their best and got First positon in
                     Computer Quiz competition at Vibhag level held at MSVM, Mahavirpuram, Siwan. They made the school
                     feel proud.</div>
-                <button class="readMore"><a href="https://www.facebook.com/share/p/bi9pMu6htnCxQ6GZ/?mibextid=oFDknk">Read More <i class='bx bx-chevron-right'></i></a></button>
+                <button class="readMore"><a
+                        href="https://www.facebook.com/share/p/bi9pMu6htnCxQ6GZ/?mibextid=oFDknk">Read More <i
+                            class='bx bx-chevron-right'></i></a></button>
             </div>
             <div class="cardStyle1">
                 <div class="varg">Kishor Varg</div>
@@ -57,11 +61,17 @@
                     in
                     Computer Quiz competition at Vibhag level held at MSVM, Mahavirpuram, Siwan. They made the school
                     feel proud.</div>
-                <button class="readMore"><a href="https://www.facebook.com/share/p/Y6u4gfDvopJysSpq/?mibextid=oFDknk">Read More <i class='bx bx-chevron-right'></a></i></button>
+                <button class="readMore"><a
+                        href="https://www.facebook.com/share/p/Y6u4gfDvopJysSpq/?mibextid=oFDknk">Read More <i
+                            class='bx bx-chevron-right'></a></i></button>
             </div>
 
             <h2>Navigate to</h2>
             <ul id="homeNavContainer">
+                <li id="navToModel" onclick="modelF()">
+                    <i class='bx bx-buildings'></i>
+                    <p class="iconName">Model</p>
+                </li>
                 <li id="navToMembers" onclick="membersF()">
                     <i class='bx bx-group'></i>
                     <p class="iconName">Members</p>
@@ -87,6 +97,44 @@
                     <p class="iconName">About Me</p>
                 </li>
             </ul>
+        </section>
+
+        <section id="model">
+            <h2>Computer Model</h2>
+            <h3>Intro</h3>
+            <p class="description">The <b>Computer Models</b> section highlights a key event in the annual Vidya Bharati competition, where students showcase their technical and creative skills through innovative models. Each model is undertaken by one or two students, with different schools presenting a variety of unique ideas. The competition is divided into two categories: one for students in grades 6 to 8 (Bal Varg), and the other for grades 9 and 10 (Kishor Varg), with each category focusing on distinct topics. 
+
+                Unlike the quiz, the Computer Model competition consists of only one level, referred to as <i>Prant</i>. Although students are required to stay for three days, the model presentation takes place on a single day. This event runs parallel to the computer quiz, allowing students from both activities to interact and share knowledge. 
+                
+                Participants are judged on their creativity, technical execution, and presentation skills, with awards given to the top performers. This exhibition not only promotes interest in technology but also encourages students to think critically and develop practical solutions to real-world problems. The section on this website showcases our school’s participation and achievements in this prestigious event, highlighting the innovative models created by our students.</p>
+
+            <h3>Achievements</h3>
+            <div class="historyCard silverCard">
+            <img src="resources/ProjectPrizeTakingKP2022.jpg" alt="Image of past year(s)" class="historyImg">
+            <ul class="historyList">
+                <li class="historyListItem">
+                    <span class="historyLiTitle">Level: </span><span class="historyLiDescription">Prant</span>
+                </li>
+                <li class="historyListItem">
+                    <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥈 2nd</span>
+                </li>
+                <li class="historyListItem">
+                    <span class="historyLiTitle">Date: </span><span class="historyLiDescription">20th October 2022</span>
+                </li>
+                <li class="historyListItem">
+                    <div class="historyLiTitle">Members:</div>
+                    <ul class="historyMembersName">
+                        <li>Aditya Jaiswal</li>
+                        <li>Anshika Singh</li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+
+            <h3>Others</h3>
+            <div class="info">For more information download PDF below</div>
+            <a href="resources/संगणक प्रदर्श पाठ्यक्रम 2024-25.pdf" download="resources/संगणक प्रदर्श पाठ्यक्रम 2024-25.pdf"><button
+                class="pdfDownload"><i class='bx bx-download'></i></span> Download PDF</button></a>
         </section>
 
         <section id="members">
@@ -248,9 +296,12 @@
             <h3>Special Thanks</h3>
             <p>A special thanks to the computer teachers and our principal to guide the team throughout the journey</p>
             <div class="teachers">
-                <div class="teachersCard"><img src="resources/PradhanacharyaJi.jpg" alt="Pradhanacharya_Ji"> <span>Our Principal</span></div>
-                <div class="teachersCard"><img src="resources/BhaskarAacharyaJi.jpg" alt="Bhaskar_Aacharya_Ji"> <span>Bhaskar Aacharya Ji</span></div>
-                <div class="teachersCard"><img src="resources/AmreshAacharyaJi.jpg" alt="Amresh_Aacharya_Ji"> <span>Amresh Aacharya Ji</span></div>
+                <div class="teachersCard"><img src="resources/PradhanacharyaJi.jpg" alt="Pradhanacharya_Ji"> <span>Our
+                        Principal</span></div>
+                <div class="teachersCard"><img src="resources/BhaskarAacharyaJi.jpg" alt="Bhaskar_Aacharya_Ji">
+                    <span>Bhaskar Aacharya Ji</span></div>
+                <div class="teachersCard"><img src="resources/AmreshAacharyaJi.jpg" alt="Amresh_Aacharya_Ji">
+                    <span>Amresh Aacharya Ji</span></div>
             </div>
 
             <h3>Bal Varg</h3>
@@ -289,7 +340,8 @@
                         <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥉 3rd</span>
                     </li>
                     <li class="historyListItem">
-                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">4th September 2023</span>
+                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">4th September
+                            2023</span>
                     </li>
                     <li class="historyListItem">
                         <div class="historyLiTitle">Members:</div>
@@ -312,7 +364,8 @@
                         <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥇 1st</span>
                     </li>
                     <li class="historyListItem">
-                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">31st August 2023</span>
+                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">31st August
+                            2023</span>
                     </li>
                     <li class="historyListItem">
                         <div class="historyLiTitle">Members:</div>
@@ -335,7 +388,8 @@
                         <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥉 3rd</span>
                     </li>
                     <li class="historyListItem">
-                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">20th October 2022</span>
+                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">20th October
+                            2022</span>
                     </li>
                     <li class="historyListItem">
                         <div class="historyLiTitle">Members:</div>
@@ -358,7 +412,8 @@
                         <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥇 1st</span>
                     </li>
                     <li class="historyListItem">
-                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">16th October 2022</span>
+                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">16th October
+                            2022</span>
                     </li>
                     <li class="historyListItem">
                         <div class="historyLiTitle">Members:</div>
@@ -381,7 +436,8 @@
                         <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥈 2nd</span>
                     </li>
                     <li class="historyListItem">
-                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">5th September 2022</span>
+                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">5th September
+                            2022</span>
                     </li>
                     <li class="historyListItem">
                         <div class="historyLiTitle">Members:</div>
@@ -406,7 +462,8 @@
                         <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥉 3rd</span>
                     </li>
                     <li class="historyListItem">
-                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">5th September 2024</span>
+                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">5th September
+                            2024</span>
                     </li>
                     <li class="historyListItem">
                         <div class="historyLiTitle">Members:</div>
@@ -428,7 +485,8 @@
                         <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥈 2nd</span>
                     </li>
                     <li class="historyListItem">
-                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">31st August 2023</span>
+                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">31st August
+                            2023</span>
                     </li>
                     <li class="historyListItem">
                         <div class="historyLiTitle">Members:</div>
@@ -450,7 +508,8 @@
                         <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥈 2nd</span>
                     </li>
                     <li class="historyListItem">
-                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">17th October 2022</span>
+                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">17th October
+                            2022</span>
                     </li>
                     <li class="historyListItem">
                         <div class="historyLiTitle">Members:</div>
@@ -472,7 +531,8 @@
                         <span class="historyLiTitle">Position: </span><span class="historyLiDescription">🥇 1st</span>
                     </li>
                     <li class="historyListItem">
-                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">5th September 2022</span>
+                        <span class="historyLiTitle">Date: </span><span class="historyLiDescription">5th September
+                            2022</span>
                     </li>
                     <li class="historyListItem">
                         <div class="historyLiTitle">Members:</div>
@@ -519,18 +579,28 @@
             <div class="info">Download PDF for more details</div>
             <a href="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf" download="संगणक प्रश्नमंच प्रतियोगिता 2024-25.pdf"><button
                     class="pdfDownload"><i class='bx bx-download'></i></span> Download PDF</button></a>
-            <div class="specialblur"></div>
         </section>
 
 
         <section id="aboutQuiz">
             <h2>About Quiz</h2>
             <h3>Intro</h3>
-            <p class="description">The <b>Vidya Bharati Computer Quiz Competition</b> is an esteemed annual competition designed to enhance students' knowledge and interest in computers and technology. Each team consists of three students from different schools, with the event divided into two categories: one for students from grades 6 to 8 (Bal Varg) and another for those in grades 9 and 10 (Kishor Varg). The quiz is structured across two competitive levels: <i>Vibhag</i> and <i>Prant</i>.
+            <p class="description">The <b>Vidya Bharati Computer Quiz Competition</b> is an esteemed annual competition
+                designed to enhance students' knowledge and interest in computers and technology. Each team consists of
+                three students from different schools, with the event divided into two categories: one for students from
+                grades 6 to 8 (Bal Varg) and another for those in grades 9 and 10 (Kishor Varg). The quiz is structured
+                across two competitive levels: <i>Vibhag</i> and <i>Prant</i>.
 
-                The <i>Vibhag</i> level is the first stage of the quiz and is a one-day event hosted in various schools affiliated with Vidya Bharati. Teams compete for the top positions, with the 1st and 2nd place winners advancing to the next level, <i>Prant</i>. The <i>Prant</i> level is a larger event, spanning three days, although the quiz itself is conducted on just one day. During Prant, students from various regions stay together, enhancing their learning experience and fostering camaraderie among participants. 
-                
-                Both levels of the competition emphasize academic rigor, teamwork, and problem-solving under pressure. The winners at each level are recognized and awarded for their exceptional performance, celebrating their skills in technology and collaboration. The competition not only promotes academic excellence but also encourages students to develop their interest in the evolving field of computers.</p>
+                The <i>Vibhag</i> level is the first stage of the quiz and is a one-day event hosted in various schools
+                affiliated with Vidya Bharati. Teams compete for the top positions, with the 1st and 2nd place winners
+                advancing to the next level, <i>Prant</i>. The <i>Prant</i> level is a larger event, spanning three
+                days, although the quiz itself is conducted on just one day. During Prant, students from various regions
+                stay together, enhancing their learning experience and fostering camaraderie among participants.
+
+                Both levels of the competition emphasize academic rigor, teamwork, and problem-solving under pressure.
+                The winners at each level are recognized and awarded for their exceptional performance, celebrating
+                their skills in technology and collaboration. The competition not only promotes academic excellence but
+                also encourages students to develop their interest in the evolving field of computers.</p>
 
             <h3>Rules <span class="session">[Session 2024-25]</span></h3>
             <ul class="rulesUl">
@@ -563,11 +633,21 @@
 
         <section id="aboutWebsite">
             <h2>About the Website</h2>
-            <p class="description">The purpose of this website is to provide comprehensive information about our school's i.e. <b> Saraswati Vidya Mandir, Keshav Nagar, Maharajganj</b> participation in the Computer Quiz. It is designed to showcase the achievements and involvement of students from our school in this prestigious competition. The website features a detailed Achievements section, highlighting our school’s performance in both the Vibhag and Prant levels over the years. Visitors can also view the names of the students who have proudly represented our school in these quizzes.
+            <p class="description">The purpose of this website is to provide comprehensive information about our
+                school's i.e. <b> Saraswati Vidya Mandir, Keshav Nagar, Maharajganj</b> participation in the Computer
+                Quiz. It is designed to showcase the achievements and involvement of students from our school in this
+                prestigious competition. The website features a detailed Achievements section, highlighting our school’s
+                performance in both the Vibhag and Prant levels over the years. Visitors can also view the names of the
+                students who have proudly represented our school in these quizzes.
 
-                Additionally, we have included the Syllabus section, offering a clear outline of the topics covered in the quiz to help future participants prepare effectively. Our aim is to keep updated on the latest quiz-related news.
-                
-                The About Quiz section provides a broader understanding of the competition's structure, rules, and significance, giving context to our school’s role. Through this website, we celebrate the hard work and dedication of our students while encouraging future batches to take part in the event and continue our school’s legacy in the field of computer knowledge and technology.</p>
+                Additionally, we have included the Syllabus section, offering a clear outline of the topics covered in
+                the quiz to help future participants prepare effectively. Our aim is to keep updated on the latest
+                quiz-related news.
+
+                The About Quiz section provides a broader understanding of the competition's structure, rules, and
+                significance, giving context to our school’s role. Through this website, we celebrate the hard work and
+                dedication of our students while encouraging future batches to take part in the event and continue our
+                school’s legacy in the field of computer knowledge and technology.</p>
 
             <div id="creatorShashikant" onclick="aboutShashikantF()">Creator: Shashikant</div>
         </section>
@@ -594,11 +674,21 @@
             <div class="meConnect">
                 <h3>Connect</h3>
                 <ul>
-                    <a href="https://github.com/Mr-Shashikant"><li> <span class="icon"><i class='bx bxl-github'></i></span> GitHub</li></a>
-                    <a href="https://t.me/Mr_Shashikant_CSS"><li><span class="icon"><i class='bx bxl-telegram'></i></span> Telegram</li></a>
-                    <a href="https://www.sololearn.com/en/profile/29591511/?ref=app"><li> <img src="resources/SoloLearn_logo.svg" alt="Sololearn_logo"> Sololearn</li></a>
-                    <a href="https://medium.com/@mrshashikant"><li><span class="icon"> <i class='bx bxl-medium'></i></span> Medium</li></a>
-                    <a href="mailto:mr.shashikant@yahoo.com"><li> <span class="icon"><i class='bx bxs-envelope'></i></span> Email</li></a>
+                    <a href="https://github.com/Mr-Shashikant">
+                        <li> <span class="icon"><i class='bx bxl-github'></i></span> GitHub</li>
+                    </a>
+                    <a href="https://t.me/Mr_Shashikant_CSS">
+                        <li><span class="icon"><i class='bx bxl-telegram'></i></span> Telegram</li>
+                    </a>
+                    <a href="https://www.sololearn.com/en/profile/29591511/?ref=app">
+                        <li> <img src="resources/SoloLearn_logo.svg" alt="Sololearn_logo"> Sololearn</li>
+                    </a>
+                    <a href="https://medium.com/@mrshashikant">
+                        <li><span class="icon"> <i class='bx bxl-medium'></i></span> Medium</li>
+                    </a>
+                    <a href="mailto:mr.shashikant@yahoo.com">
+                        <li> <span class="icon"><i class='bx bxs-envelope'></i></span> Email</li>
+                    </a>
                 </ul>
             </div>
         </section>

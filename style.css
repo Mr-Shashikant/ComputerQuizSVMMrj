@@ -312,6 +312,7 @@ h3 {
 
 
 /* initially hiding the other sections */
+#model,
 #members,
 #achievements,
 #syllabus,
@@ -319,6 +320,16 @@ h3 {
 #aboutWebsite,
 #aboutShashikant {
     display: none;
+}
+
+
+/* Model section */
+#model {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
@@ -526,7 +537,7 @@ h2+h3 {
     box-sizing: border-box;
 }
 
-#syllabus .info {
+.info {
     font-style: italic;
     color: #203e4d;
     font-size: small;

@@ -1,4 +1,5 @@
 let home = document.getElementById("home");
+let model = document.getElementById("model");
 let members = document.getElementById("members");
 let achievements = document.getElementById("achievements");
 let syllabus = document.getElementById("syllabus");
@@ -11,6 +12,19 @@ let menuToggle = document.getElementById("hamMenu");
 
 function homeF() {
     home.style.display = "flex";
+    model.style.display = "none";
+    members.style.display = "none";
+    achievements.style.display = "none";
+    syllabus.style.display = "none";
+    aboutQuiz.style.display = "none";
+    aboutWebsite.style.display = "none";
+    aboutShashikant.style.display = "none";
+    menu.style.display = "none";
+    menuToggle.classList.remove('close');
+}
+function modelF() {
+    home.style.display = "none";
+    model.style.display = "flex";
     members.style.display = "none";
     achievements.style.display = "none";
     syllabus.style.display = "none";
@@ -22,6 +36,7 @@ function homeF() {
 }
 function membersF() {
     home.style.display = "none";
+    model.style.display = "none";
     members.style.display = "flex";
     achievements.style.display = "none";
     syllabus.style.display = "none";
@@ -33,6 +48,7 @@ function membersF() {
 }
 function achievementsF() {
     home.style.display = "none";
+    model.style.display = "none";
     members.style.display = "none";
     achievements.style.display = "flex";
     syllabus.style.display = "none";
@@ -44,6 +60,7 @@ function achievementsF() {
 }
 function syllabusF() {
     home.style.display = "none";
+    model.style.display = "none";
     members.style.display = "none";
     achievements.style.display = "none";
     syllabus.style.display = "flex";
@@ -55,6 +72,7 @@ function syllabusF() {
 }
 function aboutQuizF() {
     home.style.display = "none";
+    model.style.display = "none";
     members.style.display = "none";
     achievements.style.display = "none";
     syllabus.style.display = "none";
@@ -66,6 +84,7 @@ function aboutQuizF() {
 }
 function aboutWebsiteF() {
     home.style.display = "none";
+    model.style.display = "none";
     members.style.display = "none";
     achievements.style.display = "none";
     syllabus.style.display = "none";
@@ -77,6 +96,7 @@ function aboutWebsiteF() {
 }
 function aboutShashikantF() {
     home.style.display = "none";
+    model.style.display = "none";
     members.style.display = "none";
     achievements.style.display = "none";
     syllabus.style.display = "none";
