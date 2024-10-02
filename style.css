@@ -8,6 +8,9 @@
 /* defining variables */
 :root {
     --mainColor: #00aaff;
+    --bgColor: #f3f3f3;
+    --borderColor: #e8e8e8;
+    --cardColor: #fcfcfc;
 }
 
 html {
@@ -17,7 +20,7 @@ html {
 }
 
 body {
-    background-color: #f3f3f3;
+    background-color: var(--bgColor);
     font-family: 'poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100vw;
     max-width: 500px;
@@ -141,7 +144,7 @@ main {
     height: 150px;
     position: relative;
     bottom: 100px;
-    background-color: #f3f3f3;
+    background-color: var(--bgColor);
     filter: blur(20px);
 }
 
@@ -207,8 +210,8 @@ h3 {
 }
 
 .cardStyle1 {
-    background-color: #fcfcfc;
-    border: 2px solid #e8e8e8;
+    background-color: var(--cardColor);
+    border: 2px solid var(--borderColor);
     width: 90%;
     padding: 5px 5px 10px 5px;
     box-sizing: border-box;
@@ -289,8 +292,8 @@ h3 {
 
 #homeNavContainer li {
     padding: 5px;
-    background-color: #fcfcfc;
-    border: 2px solid #e8e8e8;
+    background-color: var(--cardColor);
+    border: 2px solid var(--borderColor);
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -352,8 +355,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fcfcfc;
-    border: 2px solid #e8e8e8;
+    background-color: var(--cardColor);
+    border: 2px solid var(--borderColor);
     width: 90%;
     border-radius: 10px;
     padding: 60px 10px 10px 10px;
@@ -363,7 +366,7 @@ h3 {
 .memberCard img {
     width: 100px;
     border-radius: 100px;
-    border: 5px solid #f3f3f3;
+    border: 5px solid var(--bgColor);
     position: absolute;
     top: -50px;
 }
@@ -435,7 +438,7 @@ h3 {
 }
 
 .teachersCard span {
-    background-image: linear-gradient(to top, #f3f3f3, #f3f3f3df, #00000000);
+    background-image: linear-gradient(to top, var(--bgColor), #f3f3f3df, #00000000);
     height: 100px;
     border-radius: 0 20px 20px 0;
     display: block;
@@ -460,8 +463,8 @@ h2+h3 {
 .historyCard {
     position: relative;
     overflow: hidden;
-    background-color: #fcfcfc;
-    border: 2px solid #e8e8e8;
+    background-color: var(--cardColor);
+    border: 2px solid var(--borderColor);
     border-radius: 10px;
     width: 90%;
     z-index: 0;
@@ -675,8 +678,8 @@ h2+h3 {
 
 .meConnect ul li {
     position: relative;
-    background-color: #fcfcfc;
-    border: 2px solid #e8e8e8;
+    background-color: var(--cardColor);
+    border: 2px solid var(--borderColor);
     padding: 10px 20px;
     border-radius: 10px;
     display: flex;
