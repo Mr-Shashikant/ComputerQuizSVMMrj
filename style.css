@@ -419,11 +419,12 @@ h3 {
 }
 
 .teachers {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
-    width: 80%;
+    width: 90%;
     box-sizing: border-box;
 }
 
@@ -432,15 +433,17 @@ h3 {
 }
 
 .teachersCard img{
-    height: 220px;
-    border-radius: 20px;
+    width: 100%;
+    border-radius: 10px;
     position: relative;
 }
 
 .teachersCard span {
     background-image: linear-gradient(to top, var(--bgColor), #f3f3f3df, #00000000);
-    height: 100px;
-    border-radius: 0 20px 20px 0;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
     display: block;
     position: absolute;
     bottom: 0;
@@ -450,6 +453,13 @@ h3 {
     padding-bottom: 10px;
     font-weight: 600;
     color: #203e4d;
+    font-size: 3cqmin;
+}
+
+@media (min-width: 520px){
+    .teachersCard span {
+        font-size: 15.6px;
+    }
 }
 
 h2+h3 {
